@@ -9,9 +9,6 @@ const arg = require('yargs').check(function (argv) {
 
 var bookRecords = JSON.parse(fs.readFileSync('json/records.json', {encoding: 'utf-8'}));
 
-if (arg.operation === "add") {
-}
-
 switch (arg.operation) {
     case "add":
         addBook(arg);
